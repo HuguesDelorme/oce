@@ -9,6 +9,7 @@
 
 class SelectMgr_CompareResults: public TCollection_CompareOfInteger
 {
+	SelectMgr_CompareResults & operator = ( const SelectMgr_CompareResults & ) { return *this; } ;
  public:
   SelectMgr_CompareResults
         (const SelectMgr_IndexedDataMapOfOwnerCriterion& aMapOfCriterion)

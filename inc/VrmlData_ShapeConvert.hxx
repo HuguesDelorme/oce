@@ -23,7 +23,9 @@ class Handle_VrmlData_Coordinate;
 
 class VrmlData_ShapeConvert 
 {
- public:
+	VrmlData_ShapeConvert & operator = (const VrmlData_ShapeConvert &) { return *this; }
+
+public:
 
   typedef struct {
     TCollection_AsciiString Name;

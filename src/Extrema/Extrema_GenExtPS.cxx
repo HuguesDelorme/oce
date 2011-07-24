@@ -27,6 +27,7 @@
 
 class Bnd_SphereUBTreeSelector : public Extrema_UBTreeOfSphere::Selector
 {
+	Bnd_SphereUBTreeSelector & operator=( const Bnd_SphereUBTreeSelector & ) { return *this; }
  public:
 
   Bnd_SphereUBTreeSelector (const Handle(Bnd_HArray1OfSphere)& theSphereArray,

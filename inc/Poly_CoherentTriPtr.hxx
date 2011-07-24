@@ -84,6 +84,12 @@ class Poly_CoherentTriPtr
     return theAllocator->Allocate(theSize);
   }
 
+  /** Matching Operator for deletion. Does nothing. The operator does nothing and is called in case of "new" throwing. */
+  void operator delete (void * , const Handle(NCollection_BaseAllocator)&) 
+  {
+
+  };
+
   /**
    * Query the stored pointer to Triangle.
    */

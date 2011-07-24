@@ -25,6 +25,8 @@ struct entityRef {
   const char * name;
   const int    length;
   entityRef (const char * aName, const int aLen) : name(aName), length(aLen) {}
+private:
+	entityRef & operator = (const entityRef & ) { return *this; }
 };
 
 //=======================================================================
