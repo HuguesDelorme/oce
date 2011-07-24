@@ -1060,7 +1060,7 @@ static TopoDS_Shape FindShape(const TNaming_DataMapOfShapeMapOfShape& DM)
   if(aNum < 1) return aResult;  
   TopTools_ListOfShape List;
   TNaming_DataMapIteratorOfDataMapOfShapeMapOfShape it(DM);
-  for (;it.More();it.Next()) {
+  for (;it.More(); /* it.Next()*/ ) {
     const TopoDS_Shape& aKey1 = it.Key();
     const TNaming_MapOfShape& aMap = it.Value();
 

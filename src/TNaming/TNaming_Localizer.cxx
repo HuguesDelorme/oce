@@ -302,7 +302,7 @@ void TNaming_Localizer::GoBack (const TopoDS_Shape&         S,
     //----------------------------------------------------------
     TDF_Label        Father  = Lab.Father();
     TNaming_Iterator itLab(Father);
-    for (; itLab.More(); itLab.Next()) {
+    for (; itLab.More(); /* itLab.Next() */ ) {
       Sol = itLab.OldShape();
       break;
     }

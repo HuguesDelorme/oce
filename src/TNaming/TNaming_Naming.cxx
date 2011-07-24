@@ -549,7 +549,7 @@ static void FindNewShapeInFather (const Handle(TNaming_NamedShape)& NS,
 {  
   TDF_Label         Father  = NS->Label().Father(); 
   TNaming_Iterator  itLab(Father);
-  for (; itLab.More(); itLab.Next()) {
+  for (; itLab.More(); /*itLab.Next()*/) {
     SC= itLab.NewShape();
     break;
   }

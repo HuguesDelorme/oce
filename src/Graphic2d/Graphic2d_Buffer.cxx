@@ -345,7 +345,7 @@ printf(" Graphic2d_Buffer::ReLoad(%d)\n",ResetPosition);
 	    // The color of the 1st primitive from the buffer is required
 	    if( theColorIndex < 0) {
 	        Standard_Integer i;
-                for (i=1; i<=myPrimitives.Length(); i++) {
+                for (i=1; i<=myPrimitives.Length(); /*i++*/) {
 		  theColorIndex = myPrimitives.Value (i)->ColorIndex ();
 		    break;
  
